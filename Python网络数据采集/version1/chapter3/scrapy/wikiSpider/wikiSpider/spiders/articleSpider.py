@@ -1,5 +1,5 @@
 from scrapy.spiders import CrawlSpider, Rule
-from wikiSpider.items import Article
+from spiders.items import Article
 from scrapy.linkextractors import LinkExtractor
 
 class ArticleSpider(CrawlSpider):
