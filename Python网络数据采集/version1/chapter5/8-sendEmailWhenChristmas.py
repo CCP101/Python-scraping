@@ -17,7 +17,7 @@ def sendMail(subject, body):
 
 
 bsObj = BeautifulSoup(urlopen("https://isitchristmas.com/"))
-while (bsObj.find("a", {"id": "answer"}).attrs['title'] == "NO"):
+while bsObj.find("a", {"id": "answer"}).attrs['title'] == "NO":
     print("It is not Christmas yet.")
     time.sleep(3600)
     bsObj = BeautifulSoup(urlopen("https://isitchristmas.com/"))
