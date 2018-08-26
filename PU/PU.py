@@ -20,7 +20,7 @@ for i in range(742):
     soup = BeautifulSoup(contents, "html.parser")
     # print(soup)
     List = soup.select("div")
-    # print(List)
+    # print(List) # test if log in successfully
     chart = re.findall(""
                        "<tr>\s*"
                        "<td>([0-9]+)</td>\s*"
